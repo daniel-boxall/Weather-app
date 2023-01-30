@@ -36,8 +36,9 @@ function showCityWeather(city) {
         var today = moment().format("l");
 
         var iconPath = response.weather[0].icon;
-        var iconUrl = "https://openweathermap.org/img/wn/" + iconPath + ".png";
+        var iconUrl = "https://openweathermap.org/img/w/" + iconPath + ".png";
         var icon = $("<img>").attr("src", iconUrl);
+        icon.css("width", "100px");
 
         var cityName = $("<h4 class='cityname'>").append(city, " (", today, ")", icon);
         var tempTag = $("<p>").text("Temp: " + tempC + " °C");
@@ -98,7 +99,7 @@ showCity();
       //append data to webpage
      $("#day1").text(moment.unix(response.list[8].dt).format("DD/MM/YY"));
      $("#temp-day1").text("Temp: " + tempC + "°C")
-     $("#wind-day1").text("Wind Speed: " + wind + " Mph")
+     $("#wind-day1").text("Wind Speed: " + wind + "Mph")
      $("#humidity-day1").text("Humidity: " + humidity + "%")
 
     // DAY 2

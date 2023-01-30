@@ -7,20 +7,54 @@ img {
     size-adjust: 1px;
 }
 
+p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+button{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: blue;
+    box-shadow: 5px 5px 5px grey;
+}
+
 .display {
     display: none;
+    font-weight: 400;
 } 
 
-#card {
-    
-    border: black;
+.cityname{
+    font-size: 3rem;
+}
+#card-group{
+    display: flex;
+    background-color: grey;
     border-radius: 5px;
+    padding: 5px;
+}
+
+#card {
+    border-color: grey;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    margin: 5px;
 }
 
 .card-header{
+    font-size: 2rem;
+    font-weight: 500;
     background-color: white;
 }
+
+.list-group-item {
+    font-weight: 500;
+}
 .card {
+    width: 12rem;
     margin: 5px;
     padding: 5px;
     background-color: grey;
