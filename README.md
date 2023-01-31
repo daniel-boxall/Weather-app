@@ -1,6 +1,6 @@
 # Weather-app
 
-## [deployment link](https://........)
+## [deployment link](https://daniel-boxall.github.io/Weather-app/)
 
 ---
 
